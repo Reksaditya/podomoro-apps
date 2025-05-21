@@ -34,7 +34,7 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-#menu ul {
+#menu div {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -48,7 +48,7 @@ body {
 
 }
 
-#menu ul li {
+#menu a {
   cursor: pointer;
   transition: 0.3s;
   padding: 10px;
@@ -57,9 +57,10 @@ body {
   user-select: none;       
   outline: none;           
   -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
 }
 
-#menu ul #page1 {
+#menu #page1 {
   background-color: var(--secondary-color);
   border-radius: 100px;
 }

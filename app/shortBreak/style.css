@@ -1,0 +1,184 @@
+:root {
+  --primary-color: #fff085;
+  --secondary-color: #fcb454;
+  --tertiary-color: #ff9B17;
+  --quaternary-color: #f16767;
+}
+
+body {
+  background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#headline {
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'Honk', sans-serif;
+  margin: 5px;
+  user-select: none;       
+  outline: none;           
+  background: transparent; 
+  -webkit-tap-highlight-color: transparent;
+}
+
+#menu div {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px;
+  font-size: medium;
+  font-weight: bolder;
+  background-color: var(--quaternary-color);
+  border-radius: 100px;
+  max-width: fit-content;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+#menu a {
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  user-select: none;       
+  outline: none;           
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+#menu #page2 {
+  background-color: var(--secondary-color);
+  border-radius: 100px;
+}
+
+.app-counter-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.time-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.time-select input {
+  border: none;
+  background: inherit;
+  font-size: 5rem;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  color: white;
+}
+
+.time-select input:focus {
+  outline: none;
+}
+
+.time-select .arrow-up, .arrow-down {
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.3s;
+  user-select: none;       
+  outline: none;           
+  background: transparent; 
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.app-button button {
+  cursor: pointer;
+  background-color: var(--quaternary-color);
+  border: none;
+  box-shadow: none;
+  color: white;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.app-button button:hover {
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  scale: 1.05;
+}
+
+.app-button button:active {
+  box-shadow: none;
+  scale: 1;
+}
+
+.pop-up-notification {
+  background-image: linear-gradient(var(--tertiary-color), var(--quaternary-color));
+  padding: 20px 50px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(5px 5px rgba(0, 0, 0, 0.1));
+  border-radius: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 2px solid var(--primary-color); */
+  display: none;
+}
+
+.pop-up-notification h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  font-family: 'Honk', sans-serif;
+}
+
+.pop-up-notification button {
+  border: none;
+  background-color: white;
+  border-radius: 100px;
+  padding: 10px 5px;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.pop-up-notification button:hover {
+  background-color: rgb(230, 218, 218);
+}
+
+.pop-up-notification button:active {
+  background-color: white;
+}
+
+.pop-up-notification p {
+  font-weight: 400;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: small;
+  text-align: center;
+}

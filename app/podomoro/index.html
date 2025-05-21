@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Honk&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="./asset/podomoroapps-logo(1).ico">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="./../../asset/podomoroapps-logo(1).ico">
   <title>Podomoro App</title>
 </head>
 
@@ -16,11 +15,11 @@
   <div class="app-container">
     <h1 id="headline">PODOMORO</h1>
     <nav id="menu">
-      <ul>
-        <li id="page1">Podomoro</li>
-        <li id="page2">Short Break</li>
-        <li id="page3">Long Break</li>
-      </ul>
+      <div>
+        <a id="page1" href="#">Podomoro</a>
+        <a id="page2" href="./../shortBreak/short.html">Short Break</a>
+        <a id="page3" href="./../longBreak/longBreak.html">Long Break</a>
+      </div>
     </nav>
     <div class="app-counter-box">
       <div class="time-select hours">
@@ -50,6 +49,6 @@
       <button onclick="closePopUp()">Close</button>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>

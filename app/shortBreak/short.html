@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Honk&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="./asset/podomoroapps-logo(1).ico">
+  <title>Podomoro App</title>
+</head>
+
+<body>
+  <div class="app-container">
+    <h1 id="headline">SHORT BREAK</h1>
+    <nav id="menu">
+        <div>
+          <a id="page1" href="./../podomoro/index.html">Podomoro</a>
+          <a id="page2" href="#">Short Break</a>
+          <a id="page3" href="./../longBreak/longBreak.html">Long Break</a>
+        </div>
+    </nav>
+    <div class="app-counter-box">
+      <div class="time-select hours">
+        <div class="arrow-up" onclick="timeSet('hours', 1)">&#9650;</div>
+        <input type="number" id="hours" value="00" min="00" max="99" onblur="formatInput('hours')">
+        <div class="arrow-down" onclick="timeSet('hours', -1)">&#9660;</div>
+      </div>
+      <div class="time-select minutes">
+        <div class="arrow-up" onclick="timeSet('minutes', 1)">&#9650;</div>
+        <input type="number" id="minutes" value="05" min="00" max="59" onblur="formatInput('minutes')">
+        <div class="arrow-down" onclick="timeSet('minutes', -1)">&#9660;</div>
+      </div>
+      <div class="time-select seconds">
+        <div class="arrow-up" onclick="timeSet('seconds', 1)">&#9650;</div>
+        <input type="number" id="seconds" value="00" min="00" max="59" onblur="formatInput('seconds')">
+        <div class="arrow-down" onclick="timeSet('seconds', -1)">&#9660;</div>
+      </div>
+    </div>
+    <div class="app-button">
+      <button id="start-button" onclick="startTimer()">Start</button>
+      <button id="pause-button" onclick="pauseTimer()">Pause</button>
+      <button id="reset-button" onclick="resetTimer()">Reset</button>
+    </div>
+    <div class="pop-up-notification">
+      <h3>Time's up!</h3>
+      <p>Do your podomoro again!</p>
+      <button onclick="closePopUp()">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
