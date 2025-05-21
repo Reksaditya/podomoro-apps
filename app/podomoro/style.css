@@ -119,7 +119,7 @@ body {
   box-shadow: none;
   color: white;
   border-radius: 100px;
-  padding: 10px 20px;
+  padding: 15px 25px;
   font-size: 1rem;
   font-weight: bolder;
   transition: 0.3s;
@@ -181,4 +181,48 @@ body {
   margin-bottom: 50px;
   font-size: small;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #headline {
+    font-size: 4rem;
+  }
+
+  #menu div {
+    font-size: small;
+  }
+
+  .time-select input {
+    font-size: 3rem;
+  }  
+
+  .time-select .arrow-up, .arrow-down {
+    font-size: 1.5rem;
+  }
+
+  .pop-up-notification {
+    padding: 15px 30px;
+    width: 60%;
+    height: 25%;
+  }
+
+  .pop-up-notification h3 {
+    text-align: center;
+  }
+
+  .pop-up-notification p {
+    margin-bottom: 40px;
+  }
+
+  .app-button button:hover {
+    animation: none;
+  }
+
+  .app-button {
+    margin: 0;
+  }
+
+  .app-button button {
+    padding: 10px 20px;
+  }
 }
